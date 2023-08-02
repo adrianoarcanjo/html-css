@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Midias em HTML5 </title>
+</head>
+<!-- p/ colocar audio < audio src="media + o nome do arquivo" controls autoplay></audio> -->
+<!-- p/   colocar  imagem usar a tag picture , adicionar as imangens <source media="(max-width: ex:750px)" srcset=" nome do arquivo" type="image/png"-->
+<!-- arquivo way muito pesado-->
+<body>
+    <h1> imangens dinâmica </h1>
+    <p> tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador .</p>
+
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexivel">
+    </picture>
+    <h1> reproduzindo audio </h1>
+    <p> vamos aprender a reprodiuzir audio em html </p>
+    <audio src="media/guanacast-33.mp3" controls autoplay></audio><br>
+    <audio src="media/happy-mistake.mp3" controls autoplay></audio>
+    <button> abrir</button>
+
+    
+</body>
+</html>
